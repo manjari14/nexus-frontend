@@ -1,0 +1,74 @@
+.event-schedule {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.event-schedule h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.event-schedule ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-schedule li {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-schedule li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-schedule strong {
+  font-size: 1.5rem;
+  color: #395a7e;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.event-schedule p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.event-schedule small {
+  font-size: 1rem;
+  color: #777;
+  display: block;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .event-schedule h2 {
+    font-size: 2rem;
+  }
+
+  .event-schedule li {
+    padding: 15px;
+  }
+
+  .event-schedule strong {
+    font-size: 1.25rem;
+  }
+
+  .event-schedule p {
+    font-size: 1rem;
+  }
+}

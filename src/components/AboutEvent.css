@@ -1,0 +1,22 @@
+.about-event {
+  background-color: #f9f9f9;
+  margin: 50px 0;
+  border-radius: 8px;
+  padding: 50px 0;
+}
+.about-event h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+.about-event p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-align: justify;
+  padding: 50px 50px;
+}

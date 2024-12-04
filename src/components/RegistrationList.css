@@ -1,0 +1,70 @@
+.registrations-list {
+  padding: 20px;
+  background-color: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.registrations-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/down_back.png") no-repeat center center/cover;
+  opacity: 0.6;
+}
+
+.registrations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.registration-card {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+  font-size: 1rem;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.registration-card:hover {
+  transform: translateY(-10px);
+}
+
+.registrations-list h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 25px auto;
+  justify-content: center;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.registration-card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.registration-card strong {
+  color: #333;
+}

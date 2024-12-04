@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 2;
+  text-align: center;
+}
+
+.navbar-tabs {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.navbar-tabs li {
+  display: inline-block;
+}
+
+.navbar-tabs a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navbar-tabs a:hover {
+  text-decoration: underline;
+}
+
+.event-logo {
+  max-width: 100px;
+  height: 40px;
+}
+
+.partner-logo {
+  max-width: 150px;
+}

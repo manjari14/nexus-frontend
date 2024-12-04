@@ -1,0 +1,140 @@
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+  width: 100%;
+}
+
+.banner-content h1,
+.banner-content h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-out forwards;
+  z-index: 1;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.line-animation {
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  z-index: 0;
+  animation: drawLine 3s ease-in-out infinite;
+}
+
+.line1 {
+  top: 74%;
+  left: 25%;
+  width: 50%;
+  height: 6px;
+  animation: drawLineHorizontal 3s ease-in-out infinite;
+  animation-delay: 3s;
+  z-index: 1;
+}
+
+.line2 {
+  top: 65%;
+  left: 0;
+  width: 2px;
+  height: 0;
+  animation: drawLineVertical 1s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes drawLineHorizontal {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 50%;
+    opacity: 1;
+  }
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes drawLineVertical {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 50%;
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.event-details {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.event-date,
+.event-venue {
+  margin: 5px 0;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
